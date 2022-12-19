@@ -19,7 +19,7 @@ int main (){
   printf("Data tidak ditemukan dalam array\n");
   }
   else{
-  printf("Data %d ditemukan dalam array\n",data[indexSearch]);  
+   printf("Data %d ditemukan dalam array\n",data[indexSearch]);  
   }
   return 0;
 
@@ -29,15 +29,15 @@ int binarySearch(int array[], int CariAngka, int left, int right) {
   if (right >= left) {
     int mid = left + (right - left) / 2;
  
-    // Jika menemukan angka tengah maka return mid
+     // Jika menemukan angka tengah maka return mid
     if (array[mid] == CariAngka)
       return mid;
  
-    // Cari angka pada bagian kiri
+     // Cari angka pada bagian kiri
     if (array[mid] > CariAngka)
       return binarySearch(array, CariAngka, left, mid - 1);
  
-    // Cari angka pada bagian kanan
+     // Cari angka pada bagian kanan
     return binarySearch(array, CariAngka, mid + 1, right);
   }
  
