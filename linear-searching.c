@@ -19,6 +19,6 @@ int main (){
   printf("Data tidak ditemukan dalam array\n");
   }
   else{
-  printf("Data %d ditemukan dalam array\n",data[indexSearch]);  
+   printf("Data %d ditemukan dalam array\n",data[indexSearch]);  
   }
   return 0;
